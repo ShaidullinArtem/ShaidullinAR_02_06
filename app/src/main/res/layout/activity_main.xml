@@ -45,7 +45,7 @@
     </LinearLayout>
 
     <Space
-        android:layout_width="180dp"
+        android:layout_width="40dp"
         android:layout_height="16dp"/>
 
     <TextView

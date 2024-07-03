@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.shaidullinar_02_06"
-        minSdk = 34
+        minSdk = 33
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

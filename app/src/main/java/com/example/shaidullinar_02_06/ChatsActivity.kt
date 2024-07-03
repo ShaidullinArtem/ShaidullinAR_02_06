@@ -3,6 +3,7 @@ package com.example.shaidullinar_02_06
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ListView
 import android.widget.Toast
 
@@ -10,6 +11,12 @@ class ChatsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chats)
+
+        val backButton = findViewById<Button>(R.id.arrow_back)
+
+        backButton.setOnClickListener {
+            startActivity(Intent(this, AuthActivity::class.java))
+        }
 
         val userList = listOf(
             UserType("John Joshua", "Thanks for your service", "", 1),
